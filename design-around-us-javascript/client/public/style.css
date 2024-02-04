@@ -1,0 +1,38 @@
+/* CSS reset START */
+
+body,
+body *,
+body *::before,
+body *::after {margin:0;padding:0;border:0;background:transparent;box-sizing:border-box;text-decoration:none;outline:none;font-family:inherit;}
+ol, ul, li {list-style:none;display:block;}
+table {border-collapse: collapse;border-spacing:0;}
+a img {border: none;}
+
+input,
+textarea,
+select,
+button,
+input{appearance: none; border-radius: 0;}
+
+button,
+a{cursor: pointer; color: inherit;}
+textarea{resize: none;}
+
+/* CSS reset END */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+section{
+  width: 100%;
+  height: 100vh;
+  padding: 20px 40px;
+  border-bottom: 20px solid;
+  color: #FFFFFF;
+  background-color: #4343F9;
+}
+
+section h2{
+  width: 200px;
+}

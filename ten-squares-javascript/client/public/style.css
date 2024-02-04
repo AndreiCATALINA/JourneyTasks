@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+/* CSS reset END */
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.container {
+  height: calc(100vh - 10vh);
+  width: calc(100vh - 10vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgba(67, 67, 249, 0.1);
+}
+
+.square {
+  height: 80%;
+  width: 80%;
+  background-color: rgba(67, 67, 249, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.smallest-square {
+  background-color: rgba(67, 67, 249, 1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 70%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.plus-sign {
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s;
+}
+
+.smallest-square:hover.smallest-square {
+  transform: rotate(45deg);
+}

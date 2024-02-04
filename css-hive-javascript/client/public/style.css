@@ -1,0 +1,45 @@
+/* CSS reset START */
+
+body,
+body *,
+body *::before,
+body *::after {margin:0;padding:0;border:0;background:transparent;box-sizing:border-box;text-decoration:none;outline:none;font-family:inherit;}
+ol, ul, li {list-style:none;display:block;}
+table {border-collapse: collapse;border-spacing:0;}
+a img {border: none;}
+
+input,
+textarea,
+select,
+button,
+input{appearance: none; border-radius: 0;}
+
+button,
+a{cursor: pointer; color: inherit;}
+textarea{resize: none;}
+
+/* CSS reset END */
+
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.scale-animation {
+  transform: scale(0.5);
+  transition: transform 1s;
+}
+
+.slide-in {
+  transform: translateX(-100%);
+  transition: transform 1s;
+}
+
+.rotate {
+  transform: rotate(0);
+  transition: transform 1s linear infinite;
+  
+}
